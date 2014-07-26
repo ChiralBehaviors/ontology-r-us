@@ -3,7 +3,7 @@
 >
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.chiralbehaviors.ultrastructure</groupId>
-    <artifactId>ultrastructure-ontology</artifactId>
+    <artifactId>ultrastructure-ontology.app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Ontology tools for Ultrastructure</name>
     <description>Defining a base ontology for Ultrastructure in OWL, providing un/loading of restricted OWL definitions.  Composite objects, too.</description>
@@ -67,4 +67,8 @@
         </dependency>
     </dependencies>
 
+    <packaging>pom</packaging>
+    <modules>
+        <module>owl-java-generation-plugin</module>
+    </modules>
 </project>
