@@ -1,0 +1,15 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/hhildebrand/ontologies/2014/6/UltraStructure>
+
+Declaration(Class(<http://www.semanticweb.org/hhildebrand/ontologies/2014/6/UltraStructure#CompoundRuleForm>))
+SubClassOf(<http://www.semanticweb.org/hhildebrand/ontologies/2014/6/UltraStructure#CompoundRuleForm> <http://www.semanticweb.org/hhildebrand/ontologies/2014/6/UltraStructure#RuleForm>)
+Declaration(Class(<http://www.semanticweb.org/hhildebrand/ontologies/2014/6/UltraStructure#ExistentialRuleForm>))
+SubClassOf(<http://www.semanticweb.org/hhildebrand/ontologies/2014/6/UltraStructure#ExistentialRuleForm> <http://www.semanticweb.org/hhildebrand/ontologies/2014/6/UltraStructure#RuleForm>)
+Declaration(Class(<http://www.semanticweb.org/hhildebrand/ontologies/2014/6/UltraStructure#RuleForm>))
+)

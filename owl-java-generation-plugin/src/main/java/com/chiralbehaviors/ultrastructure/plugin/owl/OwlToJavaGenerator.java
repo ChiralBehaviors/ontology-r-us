@@ -50,7 +50,7 @@ import org.protege.owl.codegeneration.main.GenerateSimpleJavaCode;
  *
  * @goal generate
  *
- * @phase generate-sources
+ * @phase process-resources
  */
 public class OwlToJavaGenerator extends AbstractMojo {
 
@@ -72,6 +72,7 @@ public class OwlToJavaGenerator extends AbstractMojo {
     private String           factoryName;
     /**
      * the ontology to generate a Java class model
+     * @parameter
      */
     private File             ontology;
     /**
@@ -93,6 +94,9 @@ public class OwlToJavaGenerator extends AbstractMojo {
      */
     private String           reasoner;
 
+    public OwlToJavaGenerator() {
+    }
+
     public OwlToJavaGenerator(boolean deleteDirectory, String factoryName,
                               File outputDirectory, String packageName,
                               String reasoner, File ontology) {
@@ -109,6 +113,12 @@ public class OwlToJavaGenerator extends AbstractMojo {
      */
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
+        if (ontology == null) {
+            throw new MojoFailureException("Ontology file name required");
+        }
+        if (packageName == null) {
+            throw new MojoFailureException("Package name required");
+        }
         List<String> arguments = new ArrayList<>();
         if (deleteDirectory) {
             arguments.add("-d");
