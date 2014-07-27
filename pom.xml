@@ -1,6 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
->
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.chiralbehaviors.ultrastructure</groupId>
     <artifactId>ultrastructure-ontology.app</artifactId>
@@ -20,6 +19,11 @@
         <developer>
             <name>Hal Hildebrand</name>
             <email>hal.hildebrand@me.com</email>
+            <organization>Chiral Behaviors</organization>
+        </developer>
+        <developer>
+            <name>Halloran Parry</name>
+            <email>halloran.parry@gmail.com</email>
             <organization>Chiral Behaviors</organization>
         </developer>
     </developers>
@@ -102,6 +106,11 @@
                 <artifactId>org.protege.editor.owl.codegeneration</artifactId>
                 <version>1.0.3-SNAPSHOT</version>
             </dependency>
+            <dependency>
+                <groupId>net.sourceforge.owlapi</groupId>
+                <artifactId>owlapi-distribution</artifactId>
+                <version>3.5.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -109,5 +118,7 @@
     <modules>
         <module>owl-java-generation-plugin</module>
         <module>ultrastructure-ontology</module>
+
+        <module>java-owl-generator</module>
     </modules>
 </project>

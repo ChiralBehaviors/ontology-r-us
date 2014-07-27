@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.chiralbehaviors.ultrastructure</groupId>
+        <artifactId>ultrastructure-ontology.app</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+  <artifactId>owl-generator</artifactId>
+    <name>Owl Generator</name>
+    <description>Generates Owl ontologies </description>
+    <dependencies>
+        <dependency>
+            <groupId>net.sourceforge.owlapi</groupId>
+            <artifactId>owlapi-distribution</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.chiralbehaviors.CoRE</groupId>
+            <artifactId>animations</artifactId>
+            <version>0.0.2-rc2-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</project>
