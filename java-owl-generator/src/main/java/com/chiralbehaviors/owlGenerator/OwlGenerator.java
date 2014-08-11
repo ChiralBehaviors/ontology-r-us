@@ -36,10 +36,12 @@ public class OwlGenerator {
     public static void generateSelfContainedOntology(Workspace workspace)
                                                                          throws OWLOntologyCreationException {
         OWLOntologyManager m = new UltrastructureOntologyManager();
+        @SuppressWarnings("unused")
         OWLOntology o = m.createOntology();
 
         Collection<Agency> agencies = workspace.getAgencies();
         for (Agency agency : agencies) {
+            @SuppressWarnings("unused")
             IRI a = IRI.create(String.format(IRI_FORMAT,
                                              Agency.class.getSimpleName(),
                                              agency.getName()));
